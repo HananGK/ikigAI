@@ -1,0 +1,29 @@
+li {
+    position:relative;
+    top:0;
+    animation: slide 6s steps(3) infinite;
+}@keyframes slide {
+    100% {
+        top: -220px;
+    }
+}
+
+.words {
+    position: relative;
+}
+
+.words::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 3px solid #5DF5E8;
+    animation: typing 2s steps(9) infinite;
+}@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
