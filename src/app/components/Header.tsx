@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Github from "../Icons/github.svg"
 
 export default function Header() {
     return (
@@ -7,8 +8,8 @@ export default function Header() {
             <Link href="/"><div className="mx-auto">
                 <Image src="/logoIkigAI.png" alt="ikigAI Logo" width={250} height={250} />
             </div></Link>
-            <div className="mx-8">
-                <div>Github</div>
+            <div className="mx-4">
+                <a href="https://github.com/HananGK/ikigAI" target="_blank" rel="noopener noreferrer"><Image src={Github} alt="github logo" width={40} height={40} /> </a>
             </div>
         </header>
     );

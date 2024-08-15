@@ -1,35 +1,4 @@
-User: hola
-AI: ¡hola! ¿Cómo estás?
-User: Quiero que me hagas un perfil empresarial con las respuestas al test ikigai. Las respuestas a las preguntas del test son las siguientes. Lo que amas: Informática, programación, novedades en tecnología. En qué eres bueno: Resolución de problemas, trabajo en equipo, disciplina. Lo que el mundo necesita: Desarrollo digital, educación en temas de internet y tecnología. Por lo que te pueden pagar: Desarrollo de software, desarrollo de aplicaciones. Con las respuestas a esas 4 preguntas quiero que me crees el perfil con la siguiente estructura, tu resultado tiene que ser lo más concreto posible, idealmente en 3-5 palabras, máximo una frase. La estructura del resultado es la siguiente. Yo amo: ... El mundo necesita: ... Pueden pagarme por: ... Soy bueno para: ... Mi misión es: .... Mi vocación es: ... Mi profesión es: ... Mi pasión es: ... Mi personalidad es: ... Mi carrera es: ... Mi arquetipo: ... Mi rareza es: ... Mi profesión ideal es: ...
-AI: ¡Claro! Con las respuestas que me proporcionaste, te creé un perfil empresarial con el resultado del test Ikigai. Aquí está:
-
-**Yo amo:** Innovar en tecnología
-
-**El mundo necesita:** Desarrollo digital y educación en tecnología
-
-**Pueden pagarme por:** Desarrollo de software y aplicaciones
-
-**Soy bueno para:** Resolución de problemas y trabajo en equipo
-
-**Mi misión es:** Contribuir al progreso digital y educar a la sociedad sobre la importancia de la tecnología
-
-**Mi vocación es:** Desarrollar soluciones innovadoras y efectivas en el campo de la informática
-
-**Mi profesión es:** Desarrollador de software y aplicaciones
-
-**Mi pasión es:** Aprender y compartir conocimientos sobre tecnología y programación
-
-**Mi personalidad es:** Disciplinada, innovadora y colaborativa
-
-**Mi carrera es:** Desarrolladora de software y aplicaciones con experiencia en resolución de problemas y trabajo en equipo
-
-**Mi arquetipo:** El Maestro, que combina la pasión por la tecnología con la habilidad para enseñar y compartir conocimientos
-
-**Mi rareza es:** La capacidad para combinar la creatividad con la disciplina y la habilidad para comunicar complejos conceptos de tecnología de manera clara y sencilla
-
-**Mi profesión ideal es:** Desarrolladora de software y aplicaciones con un enfoque en la educación y el desarrollo digital
-
-Espero que te guste!
+ Lo que amas: Informática, programación, novedades en tecnología. En qué eres bueno: Resolución de problemas, trabajo en equipo, disciplina. Lo que el mundo necesita: Desarrollo digital, educación en temas de internet y tecnología. Por lo que te pueden pagar: Desarrollo de software, desarrollo de aplicaciones. 
 
 
 
@@ -150,7 +119,7 @@ export default function QuestionsSlider({setsList = items}) {
                         </Transition>
                         
                     ))}
-                    <button onClick={() => {console.log("hello")}}>Prueba</button>
+                    
                 </div>
             </div>
         </div>

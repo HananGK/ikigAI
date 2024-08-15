@@ -7,9 +7,9 @@ import Image from "next/image"
 export default function Home() {
   return (
     <div className="flex flex-col w-full py-24 mx-auto ">
-      <div className="text-6xl font-bold flex gap-4 justify-center">
+      <div className="text-3xl sm:text-5xl md:text-6xl font-bold flex gap-4 justify-center">
         <h1>Encuentra tu </h1>
-        <ul className="flex flex-col gap-4 text-[#5DF5E8] overflow-hidden line-height-[90px] h-[70px]">
+        <ul className="flex flex-col gap-[38px] sm:gap-6 md:gap-4 text-[#5DF5E8] overflow-hidden line-height-[90px] h-[40px] sm:h-[60px] md:h-[70px]">
           <li><span className="words">camino</span></li>
           <li><span className="words">propósito</span></li>
           <li><span className="words">ikig<span className="text-[#D661FF]">AI</span></span></li>
@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-8 items-center mx-auto my-24 w-[50%]">
-        <h2 className="text-2xl font-bold">Conócete para descubrir tu futuro</h2>
+        <h2 className="text-2xl font-bold text-center">Conócete para descubrir tu futuro</h2>
         <p className="text-lg text-center">En esta página podrás realizar el <span className="font-semibold">test ikigai</span>, este término proviene del japonés y significa <span className="font-semibold">razón de vivir</span>, similar al concepto raison d&apos;être. Este test te puede ayudar a encontrar tu <span className="font-semibold">propósito de vida </span>si te sientes perdido, es el momento de elegir a qué quieres dedicarte o te sientes infeliz en tu trabajo y quieres un cambio. Está diseñado para crear un perfil empresarial mediante el <span className="font-semibold">autoconocimiento</span>, con solo 4 preguntas y la ayuda de una <span className="font-semibold">IA</span>.</p> 
         <Image src="/diagramaIkigai.png" alt="Diagrama del test ikigai" width={500} height={500} />
         <p className="text-lg text-center">¿Preparado para estar un paso más cerca de tu felicidad?</p>
