@@ -37,12 +37,8 @@ const items: Item[] = [
 },
 ];
 
-type TestQuestionsProps = {
-  setsList: Item[];
-};
-
-export default function TestQuestions({ setsList = items }: TestQuestionsProps) {
-  const [state, setState] = useState<Item[]>(setsList);
+export default function TestQuestions() {
+  const [state, setState] = useState<Item[]>(items);
   const router = useRouter(); 
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>, i: number) => {
@@ -57,7 +53,7 @@ export default function TestQuestions({ setsList = items }: TestQuestionsProps) 
     setState(newState);
   };
 
-  const respuesta = state.map(({ title, text }) => title + ": " + text).join(" ");
+  const respuesta = state.map(({ title, text }) => `${title}: ${text}`).join(" ");
 
   const handleClick = () => {
     localStorage.setItem('ikigaiResponse', respuesta);
