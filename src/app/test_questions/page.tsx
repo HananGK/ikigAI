@@ -3,8 +3,14 @@
 import { useState } from "react";
 import { useRouter } from 'next/navigation'; 
 
+type Item = {
+  title: string;
+  description: string;
+  placeholder: string;
+  text: string;
+};
 
-const items = [
+const items: Item[] = [
   {
     title: "1. Lo que amas",
     description: "¿Cuáles son tus pasiones? ¿Qué actividades te entusiasma hacer?",
@@ -31,11 +37,15 @@ const items = [
 },
 ];
 
-export default function TestQuestions({ setsList = items }) {
-  const [state, setState] = useState(setsList);
-  const router = useRouter(); // Usar el hook de enrutamiento
+type TestQuestionsProps = {
+  setsList: Item[];
+};
 
-  const handleChange = (e: any, i: number) => {
+export default function TestQuestions({ setsList = items }: TestQuestionsProps) {
+  const [state, setState] = useState<Item[]>(setsList);
+  const router = useRouter(); 
+
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>, i: number) => {
     const { value, name } = e.target;
 
     const newState = [...state];
